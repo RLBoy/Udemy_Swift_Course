@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Is_It_Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it Prime?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-eV-25C">
+                                <rect key="frame" x="126.5" y="37" width="122" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a whole positive number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKA-oq-CPv">
+                                <rect key="frame" x="72" y="70.5" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSq-6j-Kc1">
+                                <rect key="frame" x="149.5" y="193" width="76" height="30"/>
+                                <state key="normal" title="Is It Prime?"/>
+                                <connections>
+                                    <action selector="isItPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2kW-7x-FKm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJC-cO-iZB">
+                                <rect key="frame" x="72" y="128" width="231" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1c-hs-YCr">
+                                <rect key="frame" x="166" y="347" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MJC-cO-iZB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1nP-Be-9qA"/>
+                            <constraint firstItem="gpr-eV-25C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="D42-Rk-28G"/>
+                            <constraint firstItem="gpr-eV-25C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsX-dk-wJH"/>
+                            <constraint firstItem="ZSq-6j-Kc1" firstAttribute="top" secondItem="MJC-cO-iZB" secondAttribute="bottom" constant="35" id="J8H-RB-RJU"/>
+                            <constraint firstItem="x1c-hs-YCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kks-T2-xcv"/>
+                            <constraint firstItem="MJC-cO-iZB" firstAttribute="top" secondItem="rKA-oq-CPv" secondAttribute="bottom" constant="36.5" id="Sew-5j-gyx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MJC-cO-iZB" secondAttribute="trailing" constant="72" id="T7e-FX-ngM"/>
+                            <constraint firstItem="rKA-oq-CPv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WD8-gU-cSX"/>
+                            <constraint firstItem="MJC-cO-iZB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WPT-MP-azk"/>
+                            <constraint firstItem="MJC-cO-iZB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YHp-gS-epM"/>
+                            <constraint firstItem="ZSq-6j-Kc1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zs8-i4-Lch"/>
+                            <constraint firstItem="rKA-oq-CPv" firstAttribute="firstBaseline" secondItem="gpr-eV-25C" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="cU6-kB-Co2"/>
+                            <constraint firstItem="MJC-cO-iZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="keK-Ak-k2q"/>
+                            <constraint firstItem="x1c-hs-YCr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ytj-BV-dmC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="isItPrime" destination="ZSq-6j-Kc1" id="Wmz-Ke-14q"/>
+                        <outlet property="numberTextField" destination="MJC-cO-iZB" id="xan-2X-88p"/>
+                        <outlet property="resultLabel" destination="x1c-hs-YCr" id="RTt-tS-iq6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

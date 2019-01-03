@@ -172,3 +172,128 @@ if username2 == "Quentin" && password == "haha" {
 //Random number
 let diceRoll = arc4random_uniform(6)
 
+////////////////////////////////////////////////// While loop
+
+var cnt = 1
+
+while cnt <= 10 {
+    print(cnt)
+    cnt += 1
+}
+
+var counter = 1
+
+while counter <= 20 {
+    print(counter*7)
+    counter += 1
+}
+
+var tab = [12,34,67,76]
+cnt = 0
+while cnt < tab.count {
+    tab[cnt] += 1
+    cnt += 1
+}
+
+print(tab)
+
+
+////////////////////////////////////////////////////// For loop
+
+let tab2 = [2,17,83,89]
+
+for number in tab2 {
+    print(number)
+}
+
+// Challenge
+
+let family = ["Blaise","Quentin","Sabine","Céline"]
+
+for f in family{
+    print("Hi there \(f) !")
+}
+
+//
+var  numbers: [Int] = [1,3,5,7]
+
+for (index,value) in numbers.enumerated(){
+    numbers[index] = value+1
+}
+print(numbers)
+
+// Challenge
+
+var myArray: [Double] = [8,7,6,5]
+
+for (index,value) in myArray.enumerated(){
+    myArray[index] = value/2
+}
+print(myArray)
+
+///////////////////////////////////////////// Classes & Objects
+
+class Ghost{
+    
+    var isAlive = true
+    var strength = 9
+    
+    func kill(){
+        isAlive = false
+    }
+    
+    func isStrong() -> Bool {
+        if strength > 10{
+            return true
+        }else{
+            return false
+        }
+    }
+    
+}
+
+var ghost = Ghost()
+print(ghost.isAlive)
+ghost.strength = 20
+print(ghost.strength)
+ghost.kill()
+print(ghost.isAlive)
+print(ghost.isStrong())
+
+/////////////////////////////////////////////// Optionnals masterclass
+
+var number3 : Int?
+print(number3)
+
+let userEntered = "three"
+
+let userEnteredInteger = Int(userEntered)
+
+//let catAge = userEnteredInteger!*7 //Have crash of it's not a number
+//OR
+if let cat = userEnteredInteger{
+    print(cat*7)
+}
+
+//////////////////////////////////////////////// Is It Prime
+
+let prime = 17
+
+var isPrime = true
+
+if prime == 1 {
+    isPrime = false;
+}
+
+var i2 = 2
+
+while i2 < prime {
+    if prime%i2==0{
+        isPrime = false
+    }
+    i2 += 1
+}
+
+print(isPrime)
+
+
