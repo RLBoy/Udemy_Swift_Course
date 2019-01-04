@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Permanent_Data_Storage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your number ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWt-r9-2ng">
+                                <rect key="frame" x="123" y="96" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7B-m8-Fbh">
+                                <rect key="frame" x="35.5" y="433" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L7B-m8-Fbh" secondAttribute="height" multiplier="343:30" id="9S6-em-6V4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-zo-euj">
+                                <rect key="frame" x="184" y="569" width="46" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BsZ-9c-Y0r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L7B-m8-Fbh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="86a-Cy-pNU"/>
+                            <constraint firstItem="L7B-m8-Fbh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NAU-xm-Yuo"/>
+                            <constraint firstItem="dsn-zo-euj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="Vf6-Rb-eI5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsn-zo-euj" secondAttribute="trailing" constant="184" id="bl5-0F-rMF"/>
+                            <constraint firstItem="dsn-zo-euj" firstAttribute="top" secondItem="L7B-m8-Fbh" secondAttribute="bottom" constant="106" id="df1-kr-KSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dsn-zo-euj" secondAttribute="bottom" constant="263" id="pcz-rZ-iwi"/>
+                            <constraint firstItem="JWt-r9-2ng" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r6h-1T-Rjn"/>
+                            <constraint firstItem="JWt-r9-2ng" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="tld-68-Lqh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberField" destination="L7B-m8-Fbh" id="XE7-n0-4EU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.710144927536234" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+</document>
