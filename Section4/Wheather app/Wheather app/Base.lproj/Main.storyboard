@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wheather_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowToEarn10,000WhileLearningToCode.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qzf-W0-kID">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R44-KX-Rh0">
+                                <rect key="frame" x="20" y="79.5" width="374" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your city" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yp-JA-2W9">
+                                <rect key="frame" x="20" y="172" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rZ-33-BEB">
+                                <rect key="frame" x="161" y="252" width="91" height="34"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63e-gY-paX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helllo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwY-Mj-qAY">
+                                <rect key="frame" x="20" y="363" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qcg-BS-eDK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qzf-W0-kID" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Z3-kF-aCd"/>
+                            <constraint firstItem="qzf-W0-kID" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L9F-QW-0fI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5rZ-33-BEB" secondAttribute="trailing" constant="162" id="Lxt-bS-VXT"/>
+                            <constraint firstAttribute="bottom" secondItem="qzf-W0-kID" secondAttribute="bottom" id="TBT-a4-Izo"/>
+                            <constraint firstItem="NwY-Mj-qAY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xrc-Ou-1Ut"/>
+                            <constraint firstItem="qzf-W0-kID" firstAttribute="top" secondItem="R44-KX-Rh0" secondAttribute="bottom" constant="-111" id="Xzy-TQ-TZj"/>
+                            <constraint firstItem="0yp-JA-2W9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d6g-zI-Txa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R44-KX-Rh0" secondAttribute="trailing" constant="20" id="hcB-sD-QiX"/>
+                            <constraint firstItem="qzf-W0-kID" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iL1-iL-vHy"/>
+                            <constraint firstItem="0yp-JA-2W9" firstAttribute="top" secondItem="R44-KX-Rh0" secondAttribute="bottom" constant="61" id="kyt-CT-sLj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NwY-Mj-qAY" secondAttribute="trailing" constant="20" id="oNk-SI-iyx"/>
+                            <constraint firstItem="NwY-Mj-qAY" firstAttribute="top" secondItem="5rZ-33-BEB" secondAttribute="bottom" constant="77" id="sd2-JS-x0g"/>
+                            <constraint firstItem="R44-KX-Rh0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wH5-mR-Iwp"/>
+                            <constraint firstItem="5rZ-33-BEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="yxJ-qX-4pC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0yp-JA-2W9" secondAttribute="trailing" constant="20" id="zqh-yh-arm"/>
+                            <constraint firstItem="5rZ-33-BEB" firstAttribute="top" secondItem="0yp-JA-2W9" secondAttribute="bottom" constant="50" id="zxT-ex-M0S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="0yp-JA-2W9" id="IrR-ix-GNC"/>
+                        <outlet property="resultLabel" destination="NwY-Mj-qAY" id="wI4-JY-WcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HowToEarn10,000WhileLearningToCode.jpg" width="1000" height="1200"/>
+    </resources>
+</document>
